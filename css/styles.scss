@@ -1,4 +1,4 @@
-$sides-padding: 3rem;
+$sides-padding: 4rem;
 $unactive-button-color: #DBDBDB;
 
 body {
@@ -32,22 +32,38 @@ nav {
 }
 
 main {
-    margin-top: -4rem;
+    margin-top: -5.6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     padding: 0 $sides-padding;
 
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)),
-        url('../img/gdl_1.png');
-    ;
-    height: calc(100vh - 2rem);
+    // background:
+    //     linear-gradient(rgba(0, 0, 0, 0.5),
+    //         rgba(0, 0, 0, 0.5)),
+    //         url('../img/gdl_1.png');
+    // ;
+    background: linear-gradient(115.26deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.45) 34.42%, rgba(0, 0, 0, 0.3) 68.83%, rgba(255, 255, 255, 0.3) 103.25%), url("../img/gdl_1.png");
+    background-position-y: -5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 
     .hero-content {
         color: white;
+
+        h1,
+        h2 {
+            font-weight: 400;
+            margin: 1rem 0;
+        }
+
+        h2 {
+            margin-bottom: 2.5rem;
+        }
+
+
     }
 
 }
