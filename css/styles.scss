@@ -1,0 +1,53 @@
+$sides-padding: 3rem;
+$unactive-button-color: #DBDBDB;
+
+body {
+    font-family: 'Magra', sans-serif;
+}
+
+nav {
+    background-color: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem $sides-padding;
+
+    h3 {
+        font-weight: 400;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+
+    a.link {
+        text-decoration: none;
+        color: $unactive-button-color;
+        margin-inline: 1rem;
+
+        &:hover {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+}
+
+main {
+    margin-top: -4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0 $sides-padding;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url('../img/gdl_1.png');
+    ;
+    height: calc(100vh - 2rem);
+
+    .hero-content {
+        color: white;
+    }
+
+}

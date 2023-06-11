@@ -1,0 +1,39 @@
+body {
+  font-family: "Magra", sans-serif;
+}
+
+nav {
+  background-color: transparent;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+}
+nav h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+nav a.link {
+  text-decoration: none;
+  color: #DBDBDB;
+  margin-inline: 1rem;
+}
+nav a.link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+main {
+  margin-top: -4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/gdl_1.png");
+  height: calc(100vh - 2rem);
+}
+main .hero-content {
+  color: white;
+}/*# sourceMappingURL=styles.css.map */
