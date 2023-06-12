@@ -4,7 +4,6 @@ body {
 
 nav {
   background-color: transparent;
-  color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,14 +13,15 @@ nav h3 {
   font-weight: 400;
   font-size: 1.5rem;
   letter-spacing: 2px;
+  color: white;
 }
 nav a.link {
   text-decoration: none;
   color: #DBDBDB;
   margin-inline: 1rem;
 }
-nav a.link:hover {
-  color: white;
+nav a.link:hover, nav a.link.active {
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -31,11 +31,11 @@ main {
   flex-direction: column;
   justify-content: center;
   padding: 0 4rem;
-  background: linear-gradient(115.26deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.45) 34.42%, rgba(0, 0, 0, 0.3) 68.83%, rgba(255, 255, 255, 0.3) 103.25%), url("../img/gdl_1.png");
-  background-position-y: -5%;
+  background: linear-gradient(115.26deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.45) 34.42%, rgba(0, 0, 0, 0.3) 68.83%, rgba(255, 255, 255, 0.1) 103.25%), url("../img/gdl_1.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+  background-size: 100% 125%;
+  height: 95vh;
+  background-position: top right;
 }
 main .hero-content {
   color: white;
@@ -45,6 +45,31 @@ main .hero-content h2 {
   font-weight: 400;
   margin: 1rem 0;
 }
+main .hero-content h1 {
+  border-bottom: 1px solid #D1AF62;
+  padding-bottom: 1rem;
+  display: inline-block;
+  margin-bottom: 0rem;
+}
 main .hero-content h2 {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
+  color: #DBDBDB;
+}
+main .hero-content .cta-btn {
+  color: white;
+  padding: 1rem 2.5rem;
+  background-color: #BC9D50;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  main {
+    background: linear-gradient(115.26deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 34.42%, rgba(0, 0, 0, 0.4) 68.83%, rgba(255, 255, 255, 0.1) 103.25%), url("../img/gdl_1.png");
+    background-size: cover;
+    background-position: bottom right;
+  }
+  .hero-content {
+    width: 100%;
+    text-align: center;
+  }
 }/*# sourceMappingURL=styles.css.map */
