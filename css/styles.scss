@@ -4,13 +4,13 @@ $sides-padding: 4rem;
 $unactive-button-color: #DBDBDB;
 $active-button-color: #fff;
 $gold-color: #D1AF62;
-$dark-gold-color: #BC9D50;
+$dark-gold-color: #b18f3a;
 
 $hero-content-subtitle-color: #DBDBDB;
 
 
 // Border Radius
-$border-radius: 10px;
+$border-radius: 1rem;
 
 body {
     font-family: 'Magra', sans-serif;
@@ -44,8 +44,9 @@ nav {
     }
 }
 
-main {
-    margin-top: -5.6rem;
+.image-container {
+    height: 95vh;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,7 +54,6 @@ main {
     background: linear-gradient(115.26deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.45) 34.42%, rgba(0, 0, 0, 0.3) 68.83%, rgba(255, 255, 255, 0.1) 103.25%), url("../img/gdl_1.png");
     background-repeat: no-repeat;
     background-size: 100% 125%;
-    height: 95vh;
     background-position: top right;
 
     .hero-content {
@@ -70,12 +70,14 @@ main {
             padding-bottom: 1rem;
             display: inline-block;
             margin-bottom: 0rem;
+            font-size: 2.5rem;
 
         }
 
         h2 {
             margin-bottom: 3rem;
             color: $hero-content-subtitle-color;
+            font-size: 1.5rem;
         }
 
         .cta-btn {
@@ -83,27 +85,52 @@ main {
             padding: 1rem 2.5rem;
             background-color: $dark-gold-color;
             border-radius: $border-radius;
+            text-decoration: none;
 
         }
 
 
     }
+}
+
+// Backgrounds
+main.first-bg {
+    background: linear-gradient(115.26deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.45) 34.42%, rgba(0, 0, 0, 0.3) 68.83%, rgba(255, 255, 255, 0.1) 103.25%), url("../img/gdl_1.png");
+    margin-top: -5.6rem;
+
+
+}
+
+.second-bg {
+    background: linear-gradient(115.26deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 34.42%, rgba(0, 0, 0, 0.4) 68.83%, rgba(255, 255, 255, 0.1) 103.25%), url("https://images.unsplash.com/photo-1503423571797-2d2bb372094a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80");
+    background-position: top center;
+    background-size: cover;
+
+    .hero-content {
+        width: 70%;
+    }
 
 }
 
 
-
-
 // Media Queries
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 760px) {
+    $sides-padding: 1rem;
 
-    main {
+    .image-container.first-bg {
         background: linear-gradient(115.26deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 34.42%, rgba(0, 0, 0, 0.4) 68.83%, rgba(255, 255, 255, 0.1) 103.25%), url("../img/gdl_1.png");
         background-size: cover;
-        background-position: bottom right;
+        background-position: top right;
     }
 
-    .hero-content {
+    .second-bg {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 46%, rgba(0, 0, 0, 0.4471989479) 100%), url("https://images.unsplash.com/photo-1503423571797-2d2bb372094a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80");
+        background-position: center center;
+    }
+
+    .first-bg .hero-content,
+    .second-bg .hero-content {
         width: 100%;
         text-align: center;
     }
