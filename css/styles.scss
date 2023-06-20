@@ -65,6 +65,7 @@ nav {
         h3 {
             font-weight: 400;
             margin: 1rem 0;
+            line-height: 2rem;
         }
 
         .section-title {
@@ -73,6 +74,7 @@ nav {
             display: inline-block;
             margin-bottom: 0rem;
             font-size: 2.5rem;
+            line-height: 2.25rem;
         }
 
         .section-subtitle {
@@ -98,9 +100,7 @@ nav {
 // Backgrounds
 main.first-bg {
     background: linear-gradient(115.26deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.45) 34.42%, rgba(0, 0, 0, 0.3) 68.83%, rgba(255, 255, 255, 0.1) 103.25%), url("../img/gdl_1.png");
-    margin-top: -5.6rem;
-
-
+    margin-top: -6.6rem;
 }
 
 .second-bg {
@@ -161,7 +161,7 @@ main.first-bg {
             font-size: 1.5rem;
 
             h3 {
-                padding: 25% 10%;
+                padding: 3rem;
                 border: 1px solid $gold-color;
             }
         }
@@ -177,10 +177,14 @@ main.first-bg {
 
 }
 
-
 // Media Queries
 @media only screen and (max-width: 760px) {
     $sides-padding: 0.5rem;
+
+    .image-container {
+        height: 75vh;
+
+    }
 
     .image-container.first-bg {
         background: linear-gradient(115.26deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 34.42%, rgba(0, 0, 0, 0.4) 68.83%, rgba(255, 255, 255, 0.1) 103.25%), url("../img/gdl_1.png");
@@ -197,11 +201,25 @@ main.first-bg {
     .third-bg {
         background: rgb(0, 0, 0);
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 46%, rgba(0, 0, 0, 0.4471989479) 100%), url("../img/third_bg.png");
-        background-position: center center;
+        background-position: top center;
+    }
+
+    .image-container.fourth-bg {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
 
     .fourth-bg {
-        flex-direction: column;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+
+        .hero-content {
+            p {
+                font-size: 1rem;
+                line-height: 1.8rem;
+            }
+        }
 
         .image-section {
             img {
@@ -210,6 +228,13 @@ main.first-bg {
 
             .black-overlay {
                 width: 100%;
+                text-align: center;
+
+                h3 {
+                    padding: 2rem 0.5rem;
+
+                }
+
             }
         }
     }
@@ -221,4 +246,13 @@ main.first-bg {
         text-align: center;
     }
 
+}
+
+@media only screen and (max-width: 907px) {
+    .fourth-bg {
+        background: #0C0C0C;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
 }
