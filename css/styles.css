@@ -72,12 +72,26 @@ main.first-bg {
   margin-top: -6.6rem;
 }
 
+#nosotros-page main.first-bg {
+  background: linear-gradient(115.26deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.45) 34.42%, rgba(0, 0, 0, 0.3) 68.83%, rgba(255, 255, 255, 0.1) 103.25%), url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80");
+  margin-top: -6.6rem;
+}
+
 .second-bg {
   background: linear-gradient(115.26deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 34.42%, rgba(0, 0, 0, 0.4) 68.83%, rgba(255, 255, 255, 0.1) 103.25%), url("https://images.unsplash.com/photo-1503423571797-2d2bb372094a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80");
   background-position: top center;
   background-size: cover;
 }
 .second-bg .hero-content {
+  width: 70%;
+}
+
+#nosotros-page .second-bg {
+  background: linear-gradient(115.26deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 34.42%, rgba(0, 0, 0, 0.4) 68.83%, rgba(255, 255, 255, 0.1) 103.25%), url("../img/judge_thing.png");
+  background-position: top center;
+  background-size: cover;
+}
+#nosotros-page .second-bg .hero-content {
   width: 70%;
 }
 
@@ -88,6 +102,18 @@ main.first-bg {
 }
 .third-bg .hero-content {
   width: 70%;
+}
+
+#nosotros-page .values {
+  padding: 0 4rem;
+}
+#nosotros-page .values .section-title-text {
+  display: flex;
+  justify-content: space-around;
+}
+#nosotros-page .values .values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .fourth-bg {
