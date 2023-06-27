@@ -5,6 +5,8 @@ $unactive-button-color: #DBDBDB;
 $active-button-color: #fff;
 $gold-color: #D1AF62;
 $dark-gold-color: #b18f3a;
+$card-background-color: #F6F6F6;
+$text-light-color: #4B4B4B;
 
 $hero-content-subtitle-color: #DBDBDB;
 
@@ -141,17 +143,60 @@ main.first-bg {
 }
 
 #nosotros-page .values {
+    margin: 2rem 0;
     padding: 0 $sides-padding;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
 
     .section-title-text {
         display: flex;
         justify-content: space-around;
+        gap: 5rem;
 
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 1.25rem;
+            color: $text-light-color;
+        }
     }
 
+
     .values-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .card {
+            flex: 0 1 200px;
+            width: 25%;
+            padding: 2rem 3rem;
+            background-color: $card-background-color;
+            border-radius: $image-border-radius;
+            margin: 1rem 3rem;
+
+            h4 {
+                font-weight: 300;
+                font-size: 1.75rem;
+                margin-bottom: 1rem;
+            }
+
+            i {
+                margin-bottom: 1rem;
+            }
+
+            p {
+                color: $text-light-color;
+                line-height: 22px;
+            }
+        }
     }
 }
 
